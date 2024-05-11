@@ -11,7 +11,8 @@ import {
     UPDATE_PROFILE,
 } from './types';
 
-const baseUrl = process.env.BASE_URL || 'http://localhost:5000';
+const baseUrl =
+    process.env.BASE_URL || 'https://devconnector-hr6s.onrender.com';
 
 // Get  current users profile
 export const getCurrentProfile = () => async (dispatch) => {
@@ -110,7 +111,7 @@ export const createProfile =
             };
 
             const res = await axios.post(
-                `${baseUrl}/api/profile'`,
+                `${baseUrl}/api/profile`,
                 formData,
                 config
             );

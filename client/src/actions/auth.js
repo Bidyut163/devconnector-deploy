@@ -13,7 +13,8 @@ import {
 } from './types';
 import setAuthToken from '../utils/setAuthToken';
 
-const baseUrl = process.env.BASE_URL || 'http://localhost:5000';
+const baseUrl =
+    process.env.BASE_URL || 'https://devconnector-hr6s.onrender.com';
 
 // load User
 export const loadUser = () => async (dispatch) => {
